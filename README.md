@@ -1,4 +1,4 @@
-# edk2-dempsey
+# Lumia830Pkg
 
 # All this assumes you already have unlocked your bootloader and know how to switch between different modes as well as have some sort of unbricking method if things go wrong. For RM-1073, check my GitHub Lumia640 Unbrick repo: https://github.com/WolfLink115/Lumia-640-RM-1073_Unbrick
 
