@@ -36,7 +36,7 @@ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm python3-distut
 - Open Command Prompt as admin, enter the letter for mainos partition followed by a colon (ex. E:) and run:
 ```
 cd EFIESP\efi\Microsoft\boot
-bcedit /store .\BCD /enum ALL
+bcdedit /store .\BCD /enum ALL
 - Look for the Reset Phone Application section and copy the UUID for it (UUID ex. {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}). Then run:
 bcdedit /store .\BCD /set <"{UUID-for-ResetPhoneApplication}"> "nointegritychecks" yes
 ```
