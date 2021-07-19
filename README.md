@@ -37,7 +37,9 @@ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm python3-distut
 ```
 cd EFIESP\efi\Microsoft\boot
 bcdedit /store .\BCD /enum ALL
-- Look for the Reset Phone Application section and copy the UUID for it (UUID ex. {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}). Then run:
+```
+Look for the Reset Phone Application section and copy the UUID for it (UUID ex. {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}). Then run:
+```
 bcdedit /store .\BCD /set <"{UUID-for-ResetPhoneApplication}"> "nointegritychecks" yes
 ```
 8. Enable DisplayBootMenu in BCD
